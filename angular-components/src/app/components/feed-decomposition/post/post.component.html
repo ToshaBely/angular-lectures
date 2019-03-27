@@ -1,0 +1,7 @@
+<h2>{{ post.title }}</h2>
+<p>{{ post.text }}</p>
+<p>Likes: {{ post.likes }}</p>
+<button *ngIf="!post.isLiked; else postLiked" (click)="likePost(post)">Like!</button>
+<ng-template #postLiked>
+  <button (click)="unlikePost(post)">Unlike</button>
+</ng-template>
