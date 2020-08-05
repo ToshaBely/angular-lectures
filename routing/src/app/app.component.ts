@@ -10,7 +10,7 @@ export class AppComponent {
   constructor(public router: Router) {}
 
   ngOnInit() {
-    // this.router.events.subscribe( event => console.log(event.__proto__.constructor.name) );
+    // this.router.events.subscribe( event => console.log(event) );
   }
 
   public goToUserPage() {

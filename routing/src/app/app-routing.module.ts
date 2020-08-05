@@ -26,8 +26,9 @@ const routes: Routes = [
   {
     path: 'another',
     loadChildren: './another-module/another.module#AnotherModule',
+    // loadChildren: () => import('./another-module/another.module').then(m => m.AnotherModule)
     // canActivate: [AuthGuard],
-    canLoad: [LoadingGuard],
+    // canLoad: [LoadingGuard],
   },
 
   {

@@ -9,5 +9,6 @@ export class AuthGuard implements CanActivate {
   public canActivate(): Observable<boolean> | Promise<boolean> | boolean {
     console.log('check Auth Guard');
     return false;
+    // return true;
   }
 }

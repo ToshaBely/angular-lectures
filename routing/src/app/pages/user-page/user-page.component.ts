@@ -18,6 +18,7 @@ export class UserPageComponent implements OnInit {
     });
 
     // console.log('Snapshot:', this.route.snapshot.params);
+    // this.userId = this.route.snapshot.params.id;
   }
 
   public showInfo() {

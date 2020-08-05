@@ -9,6 +9,7 @@ export class LoadingGuard implements CanLoad {
   canLoad(route: Route): boolean | Observable<boolean> | Promise<boolean> {
     console.log('check Loading Guard');
     return true;
+    // return false;
   }
   
 }
